@@ -1,0 +1,91 @@
+/* Confirmation Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.navbar {
+    background-color: #007BFF; /* Navbar background color */
+    padding: 15px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px; /* Spacing between links */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.confirmation {
+    background-color: #f9f9f9; /* Light background */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.confirmation h2 {
+    margin-bottom: 20px;
+    color: #007BFF; /* Primary color */
+    font-size: 2rem;
+}
+
+.confirmation p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+.confirmation .btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* No underline for links */
+    transition: background-color 0.3s;
+    display: inline-block; /* Ensure the button has block behavior */
+}
+
+.confirmation .btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #FFD700; /* Footer link color */
+    text-decoration: none;
+}

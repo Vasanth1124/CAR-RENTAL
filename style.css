@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: black;
+    padding: 30px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-button .btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-button .btn:hover {
+    background-color: #e65c00;
+}
+
+/* Toggle Button for mobile */
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-button .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-button {
+        display: none;
+    }
+}
+
+main{
+    background-color: black;
+}
+
+.hero{
+    height: 90vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.hero-info{
+    margin-top: 90px;
+}
+
+.hero h1{
+    font-size: 4rem;
+    line-height: 1.5;
+}
+.hero-img{
+    height: 600px;
+}
+button{
+    background-color: #ff6600;
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+    margin-top: 30px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color: #e65c00;
+}
+
+.about-us {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.about-us p strong {
+    color: #ff6600;
+}
+
+
+.car-cards {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.car-cards h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+    margin: 5px 0;
+}
+
+.card .btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #e65c00;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.blog-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.blog-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.blog-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.blog-image {
+    position: relative;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.blog-content p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.blog-content .read-more {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.blog-content .read-more:hover {
+    color: #e65c00;
+}
+
+/* Hover effect on blog image */
+.blog-card:hover .blog-image img {
+    opacity: 0.8;
+}
+
+
+.footer {
+    background-color: black;
+    color: #f3e9dc;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.footer-about, .footer-links, .footer-contact, .footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-about h3, .footer-links h3, .footer-contact h3, .footer-social h3 {
+    color: #ff6600;
+    margin-bottom: 15px;
+}
+
+.footer-about p, .footer-contact p, .footer-links ul {
+    font-size: 0.95em;
+    line-height: 1.8;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #f3e9dc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ff6600;
+}
+
+.footer-contact a {
+    color: #f3e9dc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: #ff6600;
+}
+
+.footer-social a {
+    font-size: 1.5em;
+    color: #f3e9dc;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #ff6600;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #f3e9dc;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 0.9em;
+}
+

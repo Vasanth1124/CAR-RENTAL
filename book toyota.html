@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Toyota Fortuner</title>
+    <link rel="stylesheet" href="book toyota.css"> <!-- Main CSS file -->
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="#">CarRental</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#blog-section">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="booking">
+            <h2>Book Your Toyota Fortuner</h2>
+            <div class="car-details">
+                <h3>Toyota Fortuner</h3>
+                <img src="Toyota-Fortuner-Transparent-Background.png" alt="Toyota Fortuner">
+                <p>Model: 2022</p>
+                <p>Rent Price: ₹5,500/day</p>
+            </div>
+            <form class="booking-form" onsubmit="return confirmBooking()" method="get">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required placeholder="Enter your full name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required placeholder="Enter your email">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required placeholder="Enter your phone number">
+
+                <label for="rental-days">Number of Rental Days:</label>
+                <input type="number" id="rental-days" name="rental-days" min="1" required>
+                <button type="button" onclick="confirmBooking()">Confirm Booking</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CarRental. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function confirmBooking() {
+            // Perform form validation or other checks if necessary
+    
+            // Redirect to booking confirmation page
+            window.location.href = "booking conformation.html";
+        }
+    </script>
+
+</body>
+</html>
